@@ -9,7 +9,7 @@ It is a small piece adapted to the form factor of SG9x servos. so I have used a 
 
 ## Schematic and Connections
 I assembled all the components for the prototype over a full size proto-breadboard. This is the schematic
-<img src="./images/mini-tracker4antenna.png" with="400" align="center" />
+<img src="./images/mini-tracker4antenna.png" width="400" align="center" />
 
 ### OS
 As you can see, I used a Raspberry Pi Zero + due to its small size. It has excess performance to run the Python script to control the movement of the servos and enough to run a program for calculating satellite orbits. You can install the Raspberry Pi OS Lite. Here you are the [RPI OS installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/)
@@ -21,6 +21,8 @@ You can find several applications for mobile which allows you to have the most a
 ### Instalation
 <img src="./images/gpredict_installation.png" width="600"  align="right" />
 To install GPredict. Being a desktop application I have chosen this way of installation:
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -52,9 +54,9 @@ The program is a Python script that you can execute in command prompt:
 <br>
 <br>
 These would be the parameters for the step table of this example obtained in GPredict:
-<img src="./images/lowpassdata.png"  with="100" align="center" />
+<img src="./images/lowpassdata.png" width="200" align="center" />
 
-There is a help with the order and meaning of each parameter:
+There is a help with the call formats and the order and meaning of each parameter:
 ```
 Usage:
  python mini-tracker4antenna.py [total pass time in minutes] [Start azimuth degrees] [End azimuth degrees] [Maximum elevation degrees]
@@ -66,9 +68,9 @@ e.g: mini-tracker4antenna.py 9 37 140 60
 ## Demo time
 [![Movement demo](./images/mini-tracker4antenna_test.png)](https://youtu.be/1R0TKMD1_78)
 
-## Next step
-Mini Yagi or Helical antenna handmade.
-Control interface with Gpredict.
+## Next steps
+* Build a mini-Yagi or Helical antenna handmade.
+* Control interface with Gpredict.
 
 ## Acknowledgements
 **Fernando Bueno** for the 3D design as [fbuenonet in thingverse](https://www.thingiverse.com/fbuenonet/designs) 
