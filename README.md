@@ -9,7 +9,7 @@ It is a small piece adapted to the form factor of SG9x servos. so I have used a 
 
 ## Schematic and Connections
 I assembled all the components for the prototype over a full size proto-breadboard. This is the schematic
-<img src="./images/mini-tracker4antenna.png" width="400" align="center" />
+<img src="./images/mini-tracker4antenna.png" width="500" align="center" />
 
 ### OS
 As you can see, I used a Raspberry Pi Zero + due to its small size. It has excess performance to run the Python script to control the movement of the servos and enough to run a program for calculating satellite orbits. You can install the Raspberry Pi OS Lite. Here you are the [RPI OS installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/)
@@ -32,12 +32,15 @@ For low elevation passes, the trajectory approaches a parabolic curve. At elevat
 |<img src="./images/lowpasspolar.png"/>|<img src="./images/lowpass.png" />|<img src="./images/highpass.png" />|
 
 <img src="./images/elevationequationquadratic.png" width="500"  align="right" />
+
 In this first iteration, the **calculation is based on a quadratic equation of a parabolic curve**:
-<br>
 <br>
 For the previous case of low pass the equation could be solved like this:
 <img src="./images/elevationequationsample.png" width="600" align="center" />
 <br>
+
+## The code
+I have build only one program developed as a Python script. The code is available in this repository and you can [open here](https://github.com/McOrts/mini-tracker4antenna/blob/main/mini-tracker4antenna.py).
 
 ## Run
 The program is a Python script that you can execute in command prompt. In the table data with the details of the pass obtained in GPredict. You can find the value for the parameters that you need for call the program.
