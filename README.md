@@ -1,4 +1,4 @@
-# Educational traking device for LEO orbit satellite
+# Educational traking device for LEO orbit satellites
 A satellite deployed in a low Earth orbit (LEO) shows a fast pass through the sky. So we need a device that points our directional antenna dynamically in order not to lose communication. This a satellite tracking antenna device or rotator, is based on Raspberry Pi and SG92R servos for educational purpose.
 
 ## Mechanics
