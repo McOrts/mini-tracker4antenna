@@ -120,7 +120,7 @@ else:
         MoveAzimuth(int(round(angleAZ)))
         time.sleep(.5)
         MoveElevation(int(round(angleEL)))
-        time.sleep(29)
+        time.sleep(28) # 2 seconds less becouse of leak of time moving the servos
 
     # 0.0 location
     MoveAzimuth(0)
