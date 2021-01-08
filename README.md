@@ -17,6 +17,8 @@ You don't need anything special to run the tracking program.
 
 ## Where is my SAT?
 You can find several applications for mobile which allows you to have the most accessible information. But in the Linux environment there are the applications that will give us more precision and quantity of information. A very easy to install and configure is [Gpredict](https://github.com/csete/gpredict). It allows advanced options such as defining control interfaces with ham radios and rotors like this.
+<br>
+Later I will show how to use the information provided by this program to call the program so that it is oriented to the satellite we want to connect to.
 
 ### Instalation
 To install GPredict. Being a desktop application I have chosen this way of installation:
