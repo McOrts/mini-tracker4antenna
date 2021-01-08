@@ -26,10 +26,10 @@ To install GPredict. Being a desktop application I have chosen this way of insta
 <br>
 <br>
 <br>
+<br>
+<br>
 After updating the TLE files and changing some settings. You can have a tracking in real time and very precise. For example the ISS:
-<br>
-<br>
-<img src="./images/gpredict_running.png" align="center"  />
+<img src="./images/gpredict_running.png" width="600" align="center"  />
 <br>
 
 ## Elevation calculation
@@ -41,15 +41,27 @@ For low elevation passes, the trajectory approaches a parabolic curve. At elevat
 <img src="./images/elevationequationquadratic.png" width="500"  align="right" />
 In this first iteration, the **calculation is based on a quadratic equation of a parabolic curve**:
 <br>
+<br>
 For the previous case of low pass the equation could be solved like this:
-<img src="./images/elevationequationsample.png" width="600"  align="center" />
+<img src="./images/elevationequationsample.png" width="600" align="center" />
+<br>
 
 ## Run
 <img src="./images/mini-tracker4antenna_call.png" with="400" align="right" />
 The program is a Python script that you can execute in command prompt:
 <br>
+<br>
 These would be the parameters for the step table of this example obtained in GPredict:
-<img src="./imageslowpassdata.png" with="400" align="right" />
+<img src="./images/lowpassdata.png"  with="100" align="center" />
+
+There is a help with the order and meaning of each parameter:
+```
+Usage:
+ python mini-tracker4antenna.py [total pass time in minutes] [Start azimuth degrees] [End azimuth degrees] [Maximum elevation degrees]
+ python mini-tracker4antenna.py test
+ python mini-tracker4antenna.py ?
+e.g: mini-tracker4antenna.py 9 37 140 60
+```
 
 ## Demo time
 [![Movement demo](./images/mini-tracker4antenna_test.png)](https://youtu.be/1R0TKMD1_78)
