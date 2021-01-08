@@ -1,5 +1,5 @@
 # Educational traking device for LEO orbit satellite
-A satellite deployed in a low Earth orbit (LEO) shows a fast pass through the sky. So we need a device that points our directional antenna dynamically in order not to lose communication. This a satellite tracking antenna device based on Raspberry Pi and SG92R servos for educational purpose.
+A satellite deployed in a low Earth orbit (LEO) shows a fast pass through the sky. So we need a device that points our directional antenna dynamically in order not to lose communication. This a satellite tracking antenna device or rotator, is based on Raspberry Pi and SG92R servos for educational purpose.
 
 ## Mechanics
 It is a small piece adapted to the form factor of SG9x servos. so I have used a DLP (resin) printer with the CHITUBOX program. Both the final file, and the .stl files can be found in the 3D_files folder.
@@ -19,20 +19,11 @@ You don't need anything special to run the tracking program.
 You can find several applications for mobile which allows you to have the most accessible information. But in the Linux environment there are the applications that will give us more precision and quantity of information. A very easy to install and configure is [Gpredict](https://github.com/csete/gpredict). It allows advanced options such as defining control interfaces with ham radios and rotors like this.
 
 ### Instalation
-<img src="./images/gpredict_installation.png" width="600"  align="right" />
 To install GPredict. Being a desktop application I have chosen this way of installation:
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img src="./images/gpredict_installation.png" width="600"  align="center" />
+
 After updating the TLE files and changing some settings. You can have a tracking in real time and very precise. For example the ISS:
 <img src="./images/gpredict_running.png" width="600" align="center"  />
-<br>
 
 ## Elevation calculation
 For low elevation passes, the trajectory approaches a parabolic curve. At elevations closer to the zenith, the approximation to a gaussian bell is better.
@@ -49,13 +40,11 @@ For the previous case of low pass the equation could be solved like this:
 <br>
 
 ## Run
-<img src="./images/mini-tracker4antenna_call.png" with="400" align="right" />
-The program is a Python script that you can execute in command prompt:
+The program is a Python script that you can execute in command prompt. In the table data with the details of the pass obtained in GPredict. You can find the value for the parameters that you need for call the program.
 <br>
+These would be the parameters for the low pass of the example :
+<img src="./images/lowpassdata2command.png" align="center" />
 <br>
-These would be the parameters for the step table of this example obtained in GPredict:
-<img src="./images/lowpassdata.png" width="200" align="center" />
-
 There is a help with the call formats and the order and meaning of each parameter:
 ```
 Usage:
